@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AracKiralamaOtomasyonu
 {
@@ -25,10 +26,33 @@ namespace AracKiralamaOtomasyonu
         {
             tablo = new DataTable();
             adtr = new SqlDataAdapter(sorgu,baglanti);
-            adtr.Fill(tablo);
+            adtr.Fill(tablo); //arama işleminde hata var
             baglanti.Close();
             return tablo;
         }
-    
+        public void Bos_Araclar(ComboBox combo, string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu,baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while(read.Read())
+            {
+                combo.Items.Add(read["plaka"].ToString());
+            }
+            baglanti.Close();
+        }
+        public void TC_Ara(TextBox tc, TextBox adsoyad, TextBox telefon, string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu, baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                adsoyad.Text = read["adsoyad"].ToString();
+                telefon.Text = read["telefon"].ToString();
+            }
+            baglanti.Close();
+        }
+
     }
 }

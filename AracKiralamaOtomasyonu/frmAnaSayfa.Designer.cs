@@ -88,6 +88,7 @@ namespace AracKiralamaOtomasyonu
             this.ımageList1.Images.SetKeyName(7, "sözlesme.png");
             this.ımageList1.Images.SetKeyName(8, "çıkışş.png");
             this.ımageList1.Images.SetKeyName(9, "sözlesme.png");
+            this.ımageList1.Images.SetKeyName(10, "arackayıt.jpg");
             // 
             // button6
             // 
@@ -116,6 +117,7 @@ namespace AracKiralamaOtomasyonu
             this.button5.Text = "Sözleşme";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -130,12 +132,13 @@ namespace AracKiralamaOtomasyonu
             this.button4.Text = "Araç Listeleme";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.ImageIndex = 1;
+            this.button3.ImageIndex = 10;
             this.button3.ImageList = this.ımageList1;
             this.button3.Location = new System.Drawing.Point(222, 15);
             this.button3.Name = "button3";
@@ -144,6 +147,7 @@ namespace AracKiralamaOtomasyonu
             this.button3.Text = "Araç Kayıt";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 

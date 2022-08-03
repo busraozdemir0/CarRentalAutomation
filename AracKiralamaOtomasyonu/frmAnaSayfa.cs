@@ -33,5 +33,24 @@ namespace AracKiralamaOtomasyonu
             frmMüşteriListele listele = new frmMüşteriListele();
             listele.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmAraçKayıt kayıt = new frmAraçKayıt();
+            kayıt.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmAraçListele listele = new frmAraçListele();
+            listele.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmSözleşme sözleşme = new frmSözleşme();
+            sözleşme.ShowDialog();
+
+        }
     }
 }

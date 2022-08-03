@@ -53,6 +53,18 @@
     <Compile Include="frmAnaSayfa.Designer.cs">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAraçKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAraçKayıt.Designer.cs">
+      <DependentUpon>frmAraçKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAraçListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAraçListele.Designer.cs">
+      <DependentUpon>frmAraçListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMüşteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,16 +77,31 @@
     <Compile Include="frmMüşteriListele.Designer.cs">
       <DependentUpon>frmMüşteriListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSözleşme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSözleşme.Designer.cs">
+      <DependentUpon>frmSözleşme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAraçKayıt.resx">
+      <DependentUpon>frmAraçKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAraçListele.resx">
+      <DependentUpon>frmAraçListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMüşteriEkle.resx">
       <DependentUpon>frmMüşteriEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMüşteriListele.resx">
       <DependentUpon>frmMüşteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSözleşme.resx">
+      <DependentUpon>frmSözleşme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
