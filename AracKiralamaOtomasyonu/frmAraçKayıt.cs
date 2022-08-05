@@ -51,6 +51,7 @@ namespace AracKiralamaOtomasyonu
                     Sericombo.Items.Add("Symbol");
                     Sericombo.Items.Add("Megane");
                     Sericombo.Items.Add("Clio");
+                    Sericombo.Items.Add("Kia");
                 }
                 else if (Markacombo.SelectedItem.ToString() == "Fiat")
                 {

@@ -43,7 +43,7 @@ namespace AracKiralamaOtomasyonu
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string cümle = "select * from Musteri where like '%"+textBox1.Text+"%'";
+            string cümle = "select * from Musteri where tc like '%"+textBox1.Text+"%'";
             SqlDataAdapter adtr2 = new SqlDataAdapter();          
             dataGridView1.DataSource = arackiralama.listele(adtr2, cümle);
         }

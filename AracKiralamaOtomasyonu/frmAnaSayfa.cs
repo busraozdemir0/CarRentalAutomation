@@ -52,5 +52,11 @@ namespace AracKiralamaOtomasyonu
             sözleşme.ShowDialog();
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmSatış satış = new frmSatış();
+            satış.ShowDialog();
+        }
     }
 }
